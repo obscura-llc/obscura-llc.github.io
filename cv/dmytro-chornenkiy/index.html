@@ -40,21 +40,22 @@
                     <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-accent"></i>Ukraine</p>
 <!--                     <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-accent"></i>dmitriy@moroz.cc</p> -->
                     <!-- <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-accent"></i>1224435534</p> -->
+                    <button id="btnpdf1" class="btnpdf">Download CV</button>
+                    <script>
+                        document.getElementById("btnpdf1").addEventListener("click", CreatePDFfromHTML);
+                    </script>
+
                     <hr>
-                    <div class="w3-container w3-center w3-margin-top">
+                    <div class="w3-container w3-center w3-margin-top nopdf">
                         <a title="LinkedIn" href="https://www.linkedin.com/in/%D0%B4%D0%B8%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D1%87%D1%91%D1%80%D0%BD%D0%B5%D0%BD%D1%8C%D0%BA%D0%B8%D0%B9-b711b620a/" target="_blank"><i class="fa-brands fa-2x fa-linkedin-in w3-hover-opacity w3-text-accent"></i></a>
                     </div>
-                    <hr>
+                    <hr class="nopdf">
 
                     <p>
                     Android developer with good technology stack experience and knowledge of Flutter. Proficient in an assortment of technologies, including Java, Kotlin, Firebase, Git, SQLite, Dagger and Koin. Have a B2 level of English.
                     </p>
 
-                    <button id="btnpdf1" class="btnpdf">Download CV</button>
-                    <script>
-                        document.getElementById("btnpdf1").addEventListener("click", CreatePDFfromHTML);
-                    </script>
-                    <hr class="nopdf">
+                    <hr>
 
                     <p class="w3-large"><b><i class="fa-solid fa-code fa-fw w3-margin-right w3-text-accent"></i>Coding</b></p>
                     <h5>Kotlin</h5>
