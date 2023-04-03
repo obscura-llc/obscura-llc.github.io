@@ -11,6 +11,12 @@
         <link rel="stylesheet" href="style.css">
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+        <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+        <script type="text/javascript" src="../pdf.js"></script>
         <style>html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}</style>
     </head>
     <body class="w3-light-grey">
@@ -43,6 +49,12 @@
                     <p>
                     Android developer with good technology stack experience and knowledge of Flutter. Proficient in an assortment of technologies, including Java, Kotlin, Firebase, Git, SQLite, Dagger and Koin. Have a B2 level of English.
                     </p>
+
+                    <button id="btnpdf1" class="btnpdf">Download CV</button>
+                    <script>
+                        document.getElementById("btnpdf1").addEventListener("click", CreatePDFfromHTML);
+                    </script>
+                    <hr class="nopdf">
 
                     <p class="w3-large"><b><i class="fa-solid fa-code fa-fw w3-margin-right w3-text-accent"></i>Coding</b></p>
                     <h5>Kotlin</h5>
